@@ -1,0 +1,35 @@
+[
+    {
+        "id" : "booki",
+        "title" : "Booki",
+        "cover" : "booki.png",
+        "pictures" : 
+        [
+            "booki_marseille.png",
+            "booki_chambres.png"
+        ],
+        "description" : "Développement d'un site responsive de réservation de vacances",
+        "technologies" : 
+        [
+            "HTML",
+            "CSS"
+        ]
+    },
+
+    {
+        "id" : "sophiebluel",
+        "title" : "Sophie Bluel",
+        "cover" : "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZWXsG0jc5rUtBmz9aGN1F9mSlaN76NNZ5aQ967aKPMX9ppgLg",
+        "pictures" : 
+        [
+            "https://picsum.photos/200"
+        ],
+        "description" : "Intégration dynamique d'un site d'architecture via une API",
+        "technologies" : 
+        [
+            "HTML",
+            "CSS",
+            "Javascript"
+        ]
+    }
+]

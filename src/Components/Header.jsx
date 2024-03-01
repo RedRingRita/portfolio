@@ -4,15 +4,15 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark" sticky="top">
-      <Container >
+    <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark" sticky="top" >
+      <Container xl>
         <Navbar.Brand href="#home">Prunelle STOESSEL</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav className="">
-            <Nav.Link href="#home">A propos</Nav.Link>
-            <Nav.Link href="#work">Mon travail</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav className="ms-auto">
+              <Nav.Link href="#about">A propos</Nav.Link>
+              <Nav.Link href="#work">Mon travail</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
