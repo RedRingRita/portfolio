@@ -8,7 +8,7 @@ function Contact() {
                 </Col>
 
                 <Col className='text-center'>
-                    <Stack direction='' gap={3}>
+                    <Stack direction='horizontal' gap={3}>
                         <a href='mailto:prunelle.stoessel@gmail.com' className='link-light'><i class="fa-solid fa-envelope fa-2xl"></i></a>
                         <a href="https://www.linkedin.com/in/prunelle-stoessel/" className='link-light'><i class="fa-brands fa-linkedin fa-2xl"></i></a>
                         <a href="https://github.com/RedRingRita" className='link-light'><i class="fa-brands fa-github fa-2xl"></i></a>
