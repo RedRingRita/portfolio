@@ -12,8 +12,12 @@ function Work({cover, title, description, picture, techno}) {
     "CSS": "success",
     "Javascript": "warning",
     "REACT": "info",
+    "Express": "secondary",
+    "NodeJS": "danger",
+    "MongoDB": "dark"
   };
 
+  //Fonction d'importation des images
   function importAll(r) {
     let images = {};
     r.keys().map((item, index) => {return images[item.replace('./', '')] = r(item); });
@@ -24,17 +28,17 @@ function Work({cover, title, description, picture, techno}) {
 
   return (
     <div>
-            <Card>
-              <Card.Img src={images[cover]} alt='cover' onClick={handleShow}/>
-            </Card>
+      <Card >
+        <Card.Img src={images[cover]} alt='cover' onClick={handleShow}/>
+      </Card>
 
       <Modal show={show} size="xl" onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Row>
-            <Col><Image className='img-fluid' src={images[picture[0]]}></Image></Col>
+          <Row className='pb-3'>
+            <Col><Image className='img-fluid shadow-sm' src={images[picture[0]]}></Image></Col>
 
             <Col>
               <Row><h3>{description}</h3></Row>
@@ -49,9 +53,13 @@ function Work({cover, title, description, picture, techno}) {
             </Col>       
           </Row>
 
-          <Row>
-            <Col><Image className='img-fluid' src={images[picture[1]]}></Image></Col>
+          <Row className='pb-3'>
+            <Col><Image className='img-fluid shadow-sm' src={images[picture[1]]} rounded></Image></Col>
           </Row>
+          <Row>
+            <Col><Image className='img-fluid shadow-sm' src={images[picture[2]]} rounded></Image></Col>
+          </Row>
+
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
