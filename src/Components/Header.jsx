@@ -4,8 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Header() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark" sticky="top" >
-      <Container xl>
+    <Navbar expand="lg" bg="dark" data-bs-theme="dark" sticky="top">
+      <Container>
         <Navbar.Brand href="#home">Prunelle STOESSEL</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
