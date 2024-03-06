@@ -1,0 +1,7 @@
+a {
+    color: white;
+}
+
+a:hover{
+    color: rgb(114, 114, 114);
+}

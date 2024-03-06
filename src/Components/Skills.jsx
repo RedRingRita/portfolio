@@ -7,7 +7,7 @@ import nodejs from '../../src/Assets/logos/150px/nodejs.png';
 import bootstrap from '../../src/Assets/logos/150px/bootstrap.png';
 import photoshop from '../../src/Assets/logos/150px/photoshop.png';
 
-import './skills.css';
+import '../style/skills.css';
 
 function Skills() {
   return (

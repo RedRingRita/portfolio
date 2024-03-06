@@ -1,6 +1,8 @@
 import { Container, Row, Col, Form, FloatingLabel, Button, Alert} from 'react-bootstrap';
 import { useState } from 'react';
 
+import '../style/contact.css';
+
 function Contact() {
 
     const [validated, setValidated] = useState(false);
@@ -90,9 +92,9 @@ function Contact() {
             <Col className='text-center'>
                 <Row>
                     <Col className='my-3'>
-                        <a href='mailto:prunelle.stoessel@gmail.com' className='link-light mx-3'><i class="fa-solid fa-envelope fa-2xl"></i></a>
-                        <a href="https://www.linkedin.com/in/prunelle-stoessel/" className='link-light mx-3'><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-                        <a href="https://github.com/RedRingRita" className='link-light mx-3'><i class="fa-brands fa-github fa-2xl"></i></a>
+                        <a href='mailto:prunelle.stoessel@gmail.com' className='mx-3'><i class="fa-solid fa-envelope fa-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/prunelle-stoessel/" className='mx-3'><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                        <a href="https://github.com/RedRingRita" className=' mx-3'><i class="fa-brands fa-github fa-2xl"></i></a>
                     </Col>
                 </Row>
             

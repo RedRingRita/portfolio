@@ -1,6 +1,6 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Container, Nav, Navbar,} from 'react-bootstrap';
+
+import cv from '../../src/Assets/cv/PrunelleStoessel_cv.pdf'
 
 function Header() {
   return (
@@ -10,9 +10,10 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="ms-auto">
-              <Nav.Link href="#about">A propos</Nav.Link>
-              <Nav.Link href="#work">Mon travail</Nav.Link>
-              <Nav.Link href="#contact">Contact</Nav.Link>
+            <a href={cv} download="prunelle_stoessel_cv.pdf" class="btn btn-outline-warning">Télécharger mon CV</a>
+            <Nav.Link href="#about">A propos</Nav.Link>
+            <Nav.Link href="#work">Mon travail</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
