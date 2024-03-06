@@ -1,8 +1,7 @@
-import { Container, Row, Col, Form, FloatingLabel, Button, Alert, Image} from 'react-bootstrap';
+import { Container, Row, Col, Form, FloatingLabel, Button, Alert} from 'react-bootstrap';
 import { useState } from 'react';
 
 import '../style/contact.css';
-import cvImage from '../../src/Assets/logos/cv.png'
 import cv from '../../src/Assets/cv/PrunelleStoessel_cv.pdf'
 
 function Contact() {
@@ -10,15 +9,18 @@ function Contact() {
     const [validated, setValidated] = useState(false);
     const [formState, setFormState] = useState({});
     const [showSuccess, setShowSuccess] = useState(false);
+    const [showFail, setShowFail] = useState(false);
 
     const handleSubmit = (event) => {
         event.preventDefault();
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.stopPropagation();
+            setShowSuccess(false);
+            setShowFail(true);
             setValidated(true);
         } else {
-            window.Email.send(configSmtp).then(() => setShowSuccess(true));
+            window.Email.send(configSmtp).then(() => setShowSuccess(true), setShowFail(false));
             form.reset();
             setFormState({});
             setValidated(false);
@@ -47,6 +49,9 @@ function Contact() {
                 <Row className='mb-3 justify-content-center' lg={4}>
                     <Alert className='text-center h4' show={showSuccess} variant="success">
                         Message envoyé !
+                    </Alert>
+                    <Alert className='text-center h4' show={showFail} variant="danger">
+                        Echec de l'envoie du message
                     </Alert>
                 </Row>
 
@@ -80,10 +85,11 @@ function Contact() {
                     <Row>
                         <Form.Group className="mb-3 text-align-start" controlId="formGroupMessage">
                             <Form.Label style={{color: "#ffffff" }} className='h4 fw-bold'>Message</Form.Label>
-                            <FloatingLabel className='mb-3' controlId='floatingObject' label="Objet">
+                            <FloatingLabel className='mb-3' controlId='floatingObject' label="Objet (optionnel)">
                                 <Form.Control type='text' name='object' placeholder="Objet" onChange={inputHandler}/>
                             </FloatingLabel>
                             <Form.Control required as="textarea" name='message' rows={6} placeholder="Votre message ici..." onChange={inputHandler}/>
+                            +
                             <Form.Control.Feedback type="invalid">Vous n'avez écrit aucun message !</Form.Control.Feedback>
                         </Form.Group>
                     </Row>
