@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1cd37fdc.css",
-    "main.js": "/portfolio/static/js/main.b66de88e.js",
+    "main.js": "/portfolio/static/js/main.425bfba1.js",
     "static/media/kasa_house.png": "/portfolio/static/media/kasa_house.3ff51bda8ee3e79e210f.png",
     "static/media/booki_marseille.png": "/portfolio/static/media/booki_marseille.f7dfc1b9485ab440ed5f.png",
     "static/media/sophieBluelModale.png": "/portfolio/static/media/sophieBluelModale.8a3dfd3ac2bb42164f34.png",
@@ -17,14 +17,13 @@
     "static/media/mvg_signin.png": "/portfolio/static/media/mvg_signin.96874ae6e1374ded0f4e.png",
     "static/media/booki_recherche.png": "/portfolio/static/media/booki_recherche.bce876fbc4f5e524dc11.png",
     "static/media/sophieBluelLogin.png": "/portfolio/static/media/sophieBluelLogin.ed4379d51faf75ba9f0a.png",
-    "static/media/cv.png": "/portfolio/static/media/cv.82341042d9fe176587bf.png",
     "static/media/booki_cover.png": "/portfolio/static/media/booki_cover.aaae3ea54b8151f6faf5.png",
     "index.html": "/portfolio/index.html",
     "main.1cd37fdc.css.map": "/portfolio/static/css/main.1cd37fdc.css.map",
-    "main.b66de88e.js.map": "/portfolio/static/js/main.b66de88e.js.map"
+    "main.425bfba1.js.map": "/portfolio/static/js/main.425bfba1.js.map"
   },
   "entrypoints": [
     "static/css/main.1cd37fdc.css",
-    "static/js/main.b66de88e.js"
+    "static/js/main.425bfba1.js"
   ]
 }
