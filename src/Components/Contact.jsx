@@ -10,10 +10,8 @@ function Contact() {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.stopPropagation();
-        }
-
-        if (window.Email) {
-            console.log(configSmtp);
+        } else {
+            console.log(window.Email.send(configSmtp));
             window.Email.send(configSmtp).then(() => alert("Message envoyé avec succès"));
         }
     
@@ -25,12 +23,12 @@ function Contact() {
         setFormState({...formState, [event.target.name]: event.target.value});
     }
 
-    const configSmtp ={
-        SecureToken : 'f5139d10-66b0-42ad-bb13-365b1019773b',
+    const configSmtp = {
+        SecureToken : "f5139d10-66b0-42ad-bb13-365b1019773b",
         To : 'prunelle.stoessel@gmail.com',
-        From : formState.email,
+        From : 'prunelle.stoessel@gmail.com',
         Subject : "This is the subject",
-        Body : `${formState.message} ${formState.firstName} ${formState.lastName}`
+        Body : `${formState.firstName} ${formState.lastName} <br/> Email : ${formState.email} <br/> Message : ${formState.message}`
     }
 
     return (
@@ -53,7 +51,7 @@ function Contact() {
                         <Col>
                             <Form.Group className="mb-3" controlId="formGroupFirstname">
                                 <FloatingLabel controlId='floatingFirstname' label="Prénom">
-                                    <Form.Control required type='text' name='firsttName' placeholder="prénom" onChange={inputHandler}/>
+                                    <Form.Control required type='text' name='firstName' placeholder="prénom" onChange={inputHandler}/>
                                     <Form.Control.Feedback type="invalid">Veuillez renseigner votre prénom</Form.Control.Feedback>
                                 </FloatingLabel>
                             </Form.Group>
