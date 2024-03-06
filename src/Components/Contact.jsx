@@ -1,7 +1,9 @@
-import { Container, Row, Col, Form, FloatingLabel, Button, Alert} from 'react-bootstrap';
+import { Container, Row, Col, Form, FloatingLabel, Button, Alert, Image} from 'react-bootstrap';
 import { useState } from 'react';
 
 import '../style/contact.css';
+import cvImage from '../../src/Assets/logos/cv.png'
+import cv from '../../src/Assets/cv/PrunelleStoessel_cv.pdf'
 
 function Contact() {
 
@@ -90,11 +92,16 @@ function Contact() {
             </Container>
 
             <Col className='text-center'>
+                <Row className='justify-content-center'>
+                    <Col md={6} >
+                        <a href={cv} download="prunelle_stoessel_cv.pdf" class="btn btn-outline-warning">Télécharger mon CV</a>
+                    </Col>
+                </Row>
                 <Row>
                     <Col className='my-3'>
-                        <a href='mailto:prunelle.stoessel@gmail.com' className='mx-3'><i class="fa-solid fa-envelope fa-2xl"></i></a>
-                        <a href="https://www.linkedin.com/in/prunelle-stoessel/" className='mx-3'><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-                        <a href="https://github.com/RedRingRita" className=' mx-3'><i class="fa-brands fa-github fa-2xl"></i></a>
+                        <a href='mailto:prunelle.stoessel@gmail.com' className='logo_contact mx-3'><i class="fa-solid fa-envelope fa-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/prunelle-stoessel/" className='logo_contact mx-3 '><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                        <a href="https://github.com/RedRingRita" className='logo_contact mx-3'><i class="fa-brands fa-github fa-2xl"></i></a>
                     </Col>
                 </Row>
             

@@ -1,7 +1,11 @@
-a {
+.logo_contact:visited {
     color: white;
 }
 
-a:hover{
+.logo_contact{
+    color: white;
+}
+
+.logo_contact:hover{
     color: rgb(114, 114, 114);
 }
