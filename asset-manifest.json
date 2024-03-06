@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4fec5a23.css",
-    "main.js": "/portfolio/static/js/main.dd0b7425.js",
+    "main.js": "/portfolio/static/js/main.4cbd7a9e.js",
     "static/media/kasa_house.png": "/portfolio/static/media/kasa_house.3ff51bda8ee3e79e210f.png",
     "static/media/booki_marseille.png": "/portfolio/static/media/booki_marseille.f7dfc1b9485ab440ed5f.png",
     "static/media/sophieBluelModale.png": "/portfolio/static/media/sophieBluelModale.8a3dfd3ac2bb42164f34.png",
@@ -19,10 +19,10 @@
     "static/media/booki_cover.png": "/portfolio/static/media/booki_cover.aaae3ea54b8151f6faf5.png",
     "index.html": "/portfolio/index.html",
     "main.4fec5a23.css.map": "/portfolio/static/css/main.4fec5a23.css.map",
-    "main.dd0b7425.js.map": "/portfolio/static/js/main.dd0b7425.js.map"
+    "main.4cbd7a9e.js.map": "/portfolio/static/js/main.4cbd7a9e.js.map"
   },
   "entrypoints": [
     "static/css/main.4fec5a23.css",
-    "static/js/main.dd0b7425.js"
+    "static/js/main.4cbd7a9e.js"
   ]
 }
