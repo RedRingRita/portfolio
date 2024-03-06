@@ -1,0 +1,7 @@
+Username : prunelle.stoessel@gmail.com
+Password : ABAF231A45323F23937D13E4A8F244AD9D00
+
+Server : smtp.elasticemail.com
+Port : 2525
+
+security token : f5139d10-66b0-42ad-bb13-365b1019773b
