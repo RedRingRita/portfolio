@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4fec5a23.css",
-    "main.js": "/portfolio/static/js/main.4cbd7a9e.js",
+    "main.css": "/portfolio/static/css/main.6544e11f.css",
+    "main.js": "/portfolio/static/js/main.54580cf5.js",
     "static/media/kasa_house.png": "/portfolio/static/media/kasa_house.3ff51bda8ee3e79e210f.png",
     "static/media/booki_marseille.png": "/portfolio/static/media/booki_marseille.f7dfc1b9485ab440ed5f.png",
     "static/media/sophieBluelModale.png": "/portfolio/static/media/sophieBluelModale.8a3dfd3ac2bb42164f34.png",
@@ -13,16 +13,17 @@
     "static/media/kasa_cover.png": "/portfolio/static/media/kasa_cover.848d2c2fa276dc2b1fa8.png",
     "static/media/prunelle.png": "/portfolio/static/media/prunelle.f48196d72eb5caf6ea81.png",
     "static/media/mvg_cover.png": "/portfolio/static/media/mvg_cover.97c1204ca96442c5cab9.png",
+    "static/media/PrunelleStoessel_cv.pdf": "/portfolio/static/media/PrunelleStoessel_cv.d6c9b673cdace3d85cf0.pdf",
     "static/media/mvg_signin.png": "/portfolio/static/media/mvg_signin.96874ae6e1374ded0f4e.png",
     "static/media/booki_recherche.png": "/portfolio/static/media/booki_recherche.bce876fbc4f5e524dc11.png",
     "static/media/sophieBluelLogin.png": "/portfolio/static/media/sophieBluelLogin.ed4379d51faf75ba9f0a.png",
     "static/media/booki_cover.png": "/portfolio/static/media/booki_cover.aaae3ea54b8151f6faf5.png",
     "index.html": "/portfolio/index.html",
-    "main.4fec5a23.css.map": "/portfolio/static/css/main.4fec5a23.css.map",
-    "main.4cbd7a9e.js.map": "/portfolio/static/js/main.4cbd7a9e.js.map"
+    "main.6544e11f.css.map": "/portfolio/static/css/main.6544e11f.css.map",
+    "main.54580cf5.js.map": "/portfolio/static/js/main.54580cf5.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fec5a23.css",
-    "static/js/main.4cbd7a9e.js"
+    "static/css/main.6544e11f.css",
+    "static/js/main.54580cf5.js"
   ]
 }
