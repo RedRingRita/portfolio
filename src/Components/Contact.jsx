@@ -10,12 +10,13 @@ function Contact() {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.stopPropagation();
+            setValidated(true);
         } else {
-            console.log(window.Email.send(configSmtp));
             window.Email.send(configSmtp).then(() => alert("Message envoyé avec succès"));
-        }
-    
-        setValidated(true);
+            form.reset();
+            setFormState({});
+            setValidated(false);
+        }    
     };
 
     const [formState, setFormState] = useState({});
