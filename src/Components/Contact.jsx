@@ -1,9 +1,11 @@
-import { Container, Row, Col, Form, FloatingLabel, Button} from 'react-bootstrap';
+import { Container, Row, Col, Form, FloatingLabel, Button, Alert} from 'react-bootstrap';
 import { useState } from 'react';
 
 function Contact() {
 
     const [validated, setValidated] = useState(false);
+    const [formState, setFormState] = useState({});
+    const [showSuccess, setShowSuccess] = useState(false);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -12,14 +14,13 @@ function Contact() {
             event.stopPropagation();
             setValidated(true);
         } else {
-            window.Email.send(configSmtp).then(() => alert("Message envoyé avec succès"));
+            window.Email.send(configSmtp).then(() => setShowSuccess(true));
             form.reset();
             setFormState({});
             setValidated(false);
         }    
     };
 
-    const [formState, setFormState] = useState({});
     const inputHandler = (event) => {
         setFormState({...formState, [event.target.name]: event.target.value});
     }
@@ -28,8 +29,8 @@ function Contact() {
         SecureToken : "f5139d10-66b0-42ad-bb13-365b1019773b",
         To : 'prunelle.stoessel@gmail.com',
         From : 'prunelle.stoessel@gmail.com',
-        Subject : "This is the subject",
-        Body : `${formState.firstName} ${formState.lastName} <br/> Email : ${formState.email} <br/> Message : ${formState.message}`
+        Subject : "Message provenant de mon portfolio",
+        Body : `${formState.firstName} ${formState.lastName} <br/> Email : ${formState.email} <br/> Objet : ${formState.object} <br/> Message : <br/>${formState.message}`
     }
 
     return (
@@ -37,6 +38,12 @@ function Contact() {
             <Container className='mb-3'>
                 <Row className='mb-3'>
                     <span className='h4 fw-bold text-center' style={{color: "#ffffff" }}>Me contacter</span>
+                </Row>
+
+                <Row className='mb-3 justify-content-center' lg={4}>
+                    <Alert className='text-center h4' show={showSuccess} variant="success">
+                        Message envoyé !
+                    </Alert>
                 </Row>
 
                 <Form noValidate validated={validated} onSubmit={handleSubmit} className='justify-content-center'>
@@ -69,6 +76,9 @@ function Contact() {
                     <Row>
                         <Form.Group className="mb-3 text-align-start" controlId="formGroupMessage">
                             <Form.Label style={{color: "#ffffff" }} className='h4 fw-bold'>Message</Form.Label>
+                            <FloatingLabel className='mb-3' controlId='floatingObject' label="Objet">
+                                <Form.Control type='text' name='object' placeholder="Objet" onChange={inputHandler}/>
+                            </FloatingLabel>
                             <Form.Control required as="textarea" name='message' rows={6} placeholder="Votre message ici..." onChange={inputHandler}/>
                             <Form.Control.Feedback type="invalid">Vous n'avez écrit aucun message !</Form.Control.Feedback>
                         </Form.Group>
