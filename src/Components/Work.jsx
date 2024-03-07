@@ -1,6 +1,8 @@
 import { Row, Col, Card, Modal, Button, Image, Badge, Stack, Container} from 'react-bootstrap';
 import { useState } from 'react';
 
+import "../../src/style/work.css";
+
 function Work({cover, title, description, picture, alt, techno, leftPic}) {
   const [show, setShow] = useState(false);
 
@@ -28,7 +30,7 @@ function Work({cover, title, description, picture, alt, techno, leftPic}) {
 
   return (
     <div>
-      <Card>
+      <Card className='card'>
         <Card.Img src={images[cover]} alt='cover' onClick={handleShow}/>
       </Card>
 
