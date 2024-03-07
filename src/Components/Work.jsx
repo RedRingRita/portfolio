@@ -1,7 +1,7 @@
-import { Row, Col, Card, Modal, Button, Image, Badge, Stack} from 'react-bootstrap';
+import { Row, Col, Card, Modal, Button, Image, Badge, Stack, Container} from 'react-bootstrap';
 import { useState } from 'react';
 
-function Work({cover, title, description, picture, techno}) {
+function Work({cover, title, description, picture, alt, techno, leftPic}) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -14,7 +14,7 @@ function Work({cover, title, description, picture, techno}) {
     "REACT": "info",
     "Express": "secondary",
     "NodeJS": "danger",
-    "MongoDB": "dark"
+    "MongoDB": "success"
   };
 
   //Fonction d'importation des images
@@ -28,38 +28,42 @@ function Work({cover, title, description, picture, techno}) {
 
   return (
     <div>
-      <Card >
+      <Card>
         <Card.Img src={images[cover]} alt='cover' onClick={handleShow}/>
       </Card>
 
       <Modal show={show} size="xl" onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{title}</Modal.Title>
+          <Modal.Title className='fw-bold'>{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Row className='pb-3'>
-            <Col><Image className='img-fluid shadow-sm' src={images[picture[0]]}></Image></Col>
+          <Container>
+            <Row className='pb-3'>
+              <Col xs={12} lg={6}>
+                <Image className='img-fluid shadow-sm' src={images[leftPic]} alt={alt} ></Image>
+              </Col>
+              <Col md={6}>
+                <Row><h3>{description}</h3></Row>
+                <Row>
+                    {techno.map((item, index) => ( 
+                      <Col className='h4' key={`${item.techno}+${index}`}>
+                        <Stack>                          
+                          <Badge  bg={skillColor[item]}>{item}</Badge>
+                        </Stack>
+                      </Col>
+                    ))}
+                </Row>
+              </Col>       
+            </Row>
 
-            <Col>
-              <Row><h3>{description}</h3></Row>
-              <Row className='h4'>
-                <Stack direction='horizontal' gap={2}>
-                  {techno.map((item, index) => (                    
-                    <Badge key={`${item.techno}+${index}`} bg={skillColor[item]}
-                    >{item}</Badge>
-                  ))}
-                </Stack>
+            {picture.map((image, index) => (
+              <Row key={index} className='pb-3'>
+                <Col>
+                  <Image className='img-fluid shadow-sm' src={images[picture[index]]} alt={alt} rounded ></Image>
+                </Col>
               </Row>
-            </Col>       
-          </Row>
-
-          <Row className='pb-3'>
-            <Col><Image className='img-fluid shadow-sm' src={images[picture[1]]} rounded></Image></Col>
-          </Row>
-          <Row>
-            <Col><Image className='img-fluid shadow-sm' src={images[picture[2]]} rounded></Image></Col>
-          </Row>
-
+            ))}
+          </Container>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
@@ -67,9 +71,7 @@ function Work({cover, title, description, picture, techno}) {
           </Button>
         </Modal.Footer>
       </Modal>
-
     </div>
-
   );
 }
 

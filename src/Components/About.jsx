@@ -7,7 +7,7 @@ function About() {
     return (
         <Container className='my-5 text-center' id="about">
             <Col className='mt-3'>
-                <Row className='justify-content-center mb-5' xs={2} md={6}>
+                <Row className='justify-content-center mb-5' xs={3} md={4} xl={6}>
                     <Image src={prunelle} alt='Photo de Prunelle' roundedCircle/>
                 </Row>
                 <Row className='mb-3 h5' >

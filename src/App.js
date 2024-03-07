@@ -4,7 +4,7 @@ import Work from './Components/Work';
 import Contact from './Components/Contact';
 import Skills from './Components/Skills';
 
-import project from '../src/database/projects.json';
+import projects from '../src/database/projects.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -21,26 +21,21 @@ function App() {
                     <span className='h1 fw-bold border-bottom border-danger pb-4' style={{color: "#41353d" }}>Mes réalisations</span>
                 </Container>
 
-                <Container className='mt-3' >
-                    <Row className='justify-content-center pb-3' xs={1}>
-                        <Col className='col-md-4 mb-3'>
-                            <Work cover={project[0].cover} title={project[0].title} description={project[0].description} picture={project[0].pictures} techno={project[0].technologies} />
-                        </Col>
+                <Container className='mt-3'>
+                    {projects.map((project, index) => (
+                        (index % 2 === 0) && 
+                        <Row key={index} className='justify-content-center pb-3' xs={1}>
+                            <Col className='col-md-4 mb-3' sm={12} md={8} lg={4}>
+                                <Work cover={projects[index].cover} title={projects[index].title} description={projects[index].description} picture={projects[index].pictures} alt={projects[index].alt} techno={projects[index].technologies} leftPic={projects[index].leftPic}/>
+                            </Col>
 
-                        <Col className='col-md-4'>
-                            <Work cover={project[1].cover} title={project[1].title} description={project[1].description} picture={project[1].pictures} techno={project[1].technologies} />
-                        </Col>
-                    </Row>
-
-                    <Row className='justify-content-center' xs={1}>
-                        <Col className='col-md-4 mb-3'>
-                            <Work cover={project[2].cover} title={project[2].title} description={project[2].description} picture={project[2].pictures} techno={project[2].technologies} />
-                        </Col>
-
-                        <Col className='col-md-4'>
-                            <Work cover={project[3].cover} title={project[3].title} description={project[3].description} picture={project[3].pictures} techno={project[3].technologies} />
-                        </Col>
-                    </Row>
+                            {projects[index + 1] &&
+                            <Col className='col-md-4' sm={12} md={8} lg={4}>
+                                <Work cover={projects[index+1].cover} title={projects[index+1].title} description={projects[index+1].description} picture={projects[index+1].pictures} alt={projects[index+1].alt} techno={projects[index+1].technologies} leftPic={projects[index+1].leftPic}/>
+                            </Col>
+                            }
+                        </Row>
+                    ))}
                 </Container>
             </section>
 

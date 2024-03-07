@@ -3,12 +3,13 @@
         "id" : "booki",
         "title" : "Booki",
         "cover" : "booki_cover.png",
+        "leftPic" : "booki_marseille.png",
         "pictures" : 
-        [
-            "booki_marseille.png",
+        [            
             "booki_chambres.png",
             "booki_recherche.png"
         ],
+        "alt" : "Image du site booki",
         "description" : "Développement d'un site responsive de réservation de vacances",
         "technologies" : 
         [
@@ -21,12 +22,13 @@
         "id" : "sophiebluel",
         "title" : "Sophie Bluel",
         "cover" : "sophieBluelCover.png",
+        "leftPic" :"sophieBluelLogin.png",
         "pictures" : 
         [
-            "sophieBluelLogin.png",
             "sophieBluelModale.png",
             "sophieBluelModale2.png"
         ],
+        "alt" : "Image du site de Sophie Bluel",
         "description" : "Intégration dynamique d'un site d'architecture via une API",
         "technologies" : 
         [
@@ -40,11 +42,12 @@
         "id" : "kasa",
         "title" : "Kasa",
         "cover" : "kasa_cover.png",
+        "leftPic" : "kasa_house.png",
         "pictures" : 
-        [
-            "kasa_house.png",
+        [            
             "kasa_about.png"
         ],
+        "alt" : "Image du site kasa",
         "description" : "Création d'un site de location immobilière à l'aide de React",
         "technologies" : 
         [
@@ -59,11 +62,12 @@
         "id" : "mvg",
         "title" : "Mon vieux grimoire",
         "cover" : "mvg_cover.png",
+        "leftPic" : "mvg_signin.png",
         "pictures" : 
         [
-            "mvg_signin.png",
             "mvg_book.png"
         ],
+        "alt" : "Image du site Mon vieux  grimoire",
         "description" : "Développement du backend d'un site de notation de livre",
         "technologies" : 
         [

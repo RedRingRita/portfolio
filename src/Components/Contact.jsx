@@ -100,14 +100,14 @@ function Contact() {
             <Col className='text-center'>
                 <Row className='justify-content-center'>
                     <Col md={6} >
-                        <a href={cv} download="prunelle_stoessel_cv.pdf" class="btn btn-outline-warning">Télécharger mon CV</a>
+                        <a href={cv} download="prunelle_stoessel_cv.pdf" className="btn btn-outline-warning">Télécharger mon CV</a>
                     </Col>
                 </Row>
                 <Row>
                     <Col className='my-3'>
-                        <a href='mailto:prunelle.stoessel@gmail.com' className='logo_contact mx-3'><i class="fa-solid fa-envelope fa-2xl"></i></a>
-                        <a href="https://www.linkedin.com/in/prunelle-stoessel/" className='logo_contact mx-3 '><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-                        <a href="https://github.com/RedRingRita" className='logo_contact mx-3'><i class="fa-brands fa-github fa-2xl"></i></a>
+                        <a href='mailto:prunelle.stoessel@gmail.com'  className='logo_contact mx-3'><i className="fa-solid fa-envelope fa-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/prunelle-stoessel/" target="_blank" rel="noreferrer" className='logo_contact mx-3 '><i className="fa-brands fa-linkedin fa-2xl"></i></a>
+                        <a href="https://github.com/RedRingRita" target="_blank" rel="noreferrer" className='logo_contact mx-3'><i className="fa-brands fa-github fa-2xl"></i></a>
                     </Col>
                 </Row>
             
