@@ -42,7 +42,7 @@ function Work({cover, title, description, picture, alt, techno, leftPic}) {
           <Container>
             <Row className='pb-3'>
               <Col xs={12} lg={6}>
-                <Image className='img-fluid shadow-sm' src={images[leftPic]} alt={alt} ></Image>
+                <Image className='img-fluid shadow-sm lazy' src={images[leftPic]} alt={alt} ></Image>
               </Col>
               <Col md={6}>
                 <Row><h3>{description}</h3></Row>
@@ -61,7 +61,7 @@ function Work({cover, title, description, picture, alt, techno, leftPic}) {
             {picture.map((image, index) => (
               <Row key={index} className='pb-3'>
                 <Col>
-                  <Image className='img-fluid shadow-sm' src={images[picture[index]]} alt={alt} rounded ></Image>
+                  <Image className='img-fluid shadow-sm lazy' src={images[picture[index]]} alt={alt} rounded ></Image>
                 </Col>
               </Row>
             ))}
