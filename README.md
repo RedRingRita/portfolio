@@ -1,2 +1,1 @@
-My CV as a website
-/!\ Under construction /!\
+Just my portfolio presenting my skills in web dev.
