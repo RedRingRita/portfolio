@@ -11,7 +11,7 @@ function About() {
                     <Image src={prunelle} alt='Photo de Prunelle' roundedCircle/>
                 </Row>
                 <Row className='mb-3 h5' >
-                    <p>Ancienne manager logistique, j'ai décidé de changer de voie et de m'orienter vers un métier porté vers mes premières passions : la tech. Devenir développeuse web était donc une nouvelle voie toute trouvée.</p>
+                    <p>Après une carrière enrichissante en tant que manager logistique, j'ai choisi de suivre le doux murmure de mes passions originelles vers un nouveau domaine : la technologie. Guidée par ma curiosité et mon désir d'apprendre, j'ai entrepris une formation en ligne immersive, explorant les arcanes du développement web pour acquérir les compétences essentielles à la création et à la maintenance de sites internet.</p>
                 </Row>
 
                 <Row className='h5'>

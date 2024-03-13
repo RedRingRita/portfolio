@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 import "../../src/style/work.css";
 
-function Work({cover, title, description, picture, alt, techno, leftPic}) {
+function Work({cover, title, description, picture, alt, techno, leftPic, repo, issue}) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -55,6 +55,10 @@ function Work({cover, title, description, picture, alt, techno, leftPic}) {
                       </Col>
                     ))}
                 </Row>
+                <Row className='h6'>
+                  <span className='fw-bold'>Problématiques rencontrées : </span><span>{issue}</span>
+                </Row>
+                <Row><a href={repo} rel='noreferrer' target='_blank'>Repo GitHub</a></Row>
               </Col>       
             </Row>
 

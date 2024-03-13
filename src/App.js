@@ -29,12 +29,12 @@ function App() {
                             (index % 2 === 0) && 
                             <Row key={index} className='justify-content-center pb-3' xs={1}>
                                 <Col className='col-md-4 mb-3' sm={12} md={8} lg={4}>
-                                    <Work cover={projects[index].cover} title={projects[index].title} description={projects[index].description} picture={projects[index].pictures} alt={projects[index].alt} techno={projects[index].technologies} leftPic={projects[index].leftPic}/>
+                                    <Work cover={projects[index].cover} title={projects[index].title} description={projects[index].description} picture={projects[index].pictures} alt={projects[index].alt} techno={projects[index].technologies} leftPic={projects[index].leftPic} repo={projects[index].repo} issue={projects[index].issue}/>
                                 </Col>
 
                                 {projects[index + 1] &&
                                 <Col className='col-md-4' sm={12} md={8} lg={4}>
-                                    <Work cover={projects[index+1].cover} title={projects[index+1].title} description={projects[index+1].description} picture={projects[index+1].pictures} alt={projects[index+1].alt} techno={projects[index+1].technologies} leftPic={projects[index+1].leftPic}/>
+                                    <Work cover={projects[index+1].cover} title={projects[index+1].title} description={projects[index+1].description} picture={projects[index+1].pictures} alt={projects[index+1].alt} techno={projects[index+1].technologies} leftPic={projects[index+1].leftPic} repo={projects[index+1].repo} issue={projects[index+1].issue}/>
                                 </Col>
                                 }
                             </Row>

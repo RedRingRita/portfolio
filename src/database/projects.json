@@ -15,7 +15,9 @@
         [
             "HTML",
             "CSS"
-        ]
+        ],
+        "issue" : "Comprendre le fonctionne de flexbox et grid pour suivre la mise en page de la maquette fournie.",
+        "repo" : "https://github.com/RedRingRita/Projet2_Booki"
     },
 
     {
@@ -35,7 +37,9 @@
             "HTML",
             "CSS",
             "Javascript"
-        ]
+        ],
+        "issue" : "Avoir la bonne syntaxe javascript pour que les requêtes html (GET, POST, PUT, DELETE) fonctionnent correctement et ainsi rendre le site dynamique.",
+        "repo" : "https://github.com/RedRingRita/Projet3_ArchitecteSophieBluel"
     },
 
     {
@@ -55,7 +59,9 @@
             "CSS",
             "Javascript",
             "REACT"
-        ]
+        ],
+        "issue" : "Bien comprendre comment les props fonctionnent et intéragissent pour maitriser correctement les composants React qui sont au coeur du framework.",
+        "repo" : "https://github.com/RedRingRita/Projet6_Kasa"
     },
 
     {
@@ -75,6 +81,9 @@
             "Express",
             "NodeJS",
             "MongoDB"
-        ]
+        ],
+        "issue" : "L'implémentation du module sharp dans le back-end pour optimiser les images envoyées par les utilisateurs. Beaucoup de lecture d'exemples d'utilisations m'ont permis de comprendre comment faire fonctionner sharp sur mon projet.",
+        "repo" : "https://github.com/RedRingRita/Projet7_MonVieuxGrimoire"
     }
+    
 ]
