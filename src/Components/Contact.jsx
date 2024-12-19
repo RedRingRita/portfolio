@@ -2,7 +2,7 @@ import { Container, Row, Col, Form, FloatingLabel, Button, Alert} from 'react-bo
 import { useState } from 'react';
 
 import '../style/contact.css';
-import cv from '../../src/Assets/cv/PrunelleStoessel_cv.pdf'
+import cv from '../../src/Assets/cv/prunelleStoessel_devweb_cv.pdf'
 
 function Contact() {
 
