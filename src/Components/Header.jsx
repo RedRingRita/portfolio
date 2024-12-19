@@ -1,6 +1,6 @@
 import { Container, Nav, Navbar,} from 'react-bootstrap';
 
-import cv from '../../src/Assets/cv/PrunelleStoessel_cv.pdf'
+import cv from '../../src/Assets/cv/prunelleStoessel_devweb_cv.pdf'
 
 function Header() {
   return (
